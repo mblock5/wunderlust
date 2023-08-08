@@ -1,0 +1,176 @@
+/* MEGS BLOCK */
+
+
+/* ------------- CSS RESET ------------- */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* ----------- END CSS RESET ----------- */
+
+
+/* --------------- BODY ---------------- */
+
+body {
+    width: 320px;
+    margin: 0 auto;
+
+}
+
+#skip, .sr-only, #toggle {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+}
+
+h1, h2, h3 {
+    font-family: 'Molle', cursive;
+}
+
+h4, p, q, small, nav, button, form {
+    font-family: 'Montserret', Verdana, sans-serif;
+}
+
+/* -------------- HEADER --------------- */
+
+header {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    height: 250px;
+    background-image: linear-gradient(to bottom, rgba(85, 188, 213, 1), rgba(85, 188, 213, 0));
+}
+
+#logo img, a[id="logo"] {
+    width: 120px;
+    height: 52px;
+    margin-top: 4px;
+    margin-left: 2px;
+}
+
+h1 {
+    grid-row-start: 2;
+}
+
+/* --- MENU ---  */
+
+#menu-toggle label {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 20px;
+    width: 160px;
+    height: 35px;
+    background-color: #F6D64A;
+    cursor: pointer;
+    z-index: 2;
+    text-transform: uppercase;
+    font-family: 'Montserrat', Verdana, sans-serif;
+    font-weight: 600;
+    font-size: 11px;
+    text-align: center;
+    line-height: 36px;
+    transition: width 0.25s ease-in-out;
+}
+
+#menu-toggle input:checked ~ label {
+    width: 320px;
+    height: 40px;
+    background-color: #000;
+    color: #FFF;
+}
+
+#menu-toggle ul {
+    opacity: 0;
+}
+
+#menu-toggle input:checked ~ ul {
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 58px;
+    width: 320px;
+    transition: opacity 0.25s ease-in-out;
+}
+
+#menu-toggle li a {
+    display: block;
+    text-decoration: none;
+    background-color: #55BCD5;
+    color: #000;
+    border-bottom: 0.5px solid #000;
+    text-align: center;
+    padding: 34px 0;
+    font-family: 'Montserrat', Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 11px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------- MAIN ---------------- */
+
+
+
+/* -------------- FOOTER --------------- */
+
+
+
+
+
