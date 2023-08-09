@@ -296,7 +296,7 @@ h3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    margin: 0 42px;
+    width: 320px;
 }
 
 #about div section {
@@ -335,15 +335,146 @@ h3 {
 
 /* --- CONTACT --- */
 
-#contact span {
+#contact h3 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.form-required {
     font-family: 'Montserrat', Verdana, sans-serif;
     font-style: italic;
     font-size: 14px;
 }
 
+.required {
+    color: #9B26B0;
+}
+
+form {
+    display: grid;
+    width: 260px;
+    margin-left: 24px;
+    font-family: 'Montserrat', Verdana, sans-serif;
+}
+
+form label, legend {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+form input {
+    width: 244px;
+    height: 28px;
+    padding: 8px;
+    border: 3px solid #9B26B0;
+    margin-bottom: 18px;
+}
+
+form input::placeholder {
+    font-family: 'Montserrat', Verdana, sans-serif;
+    color: #000;
+    opacity: 1;
+    font-size: 14px;
+}
+
+fieldset {
+    display: grid;
+    height: 250px;
+    margin-bottom: 32px;
+}
+
+.radio-label {
+    position: relative;
+    top: 8px;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.radio-input {
+    display: inline-block;
+    position: relative;
+    width: 36px;
+    height: 36px;
+    margin-bottom: 4px;
+    margin-right: 40px;
+    margin-left: -14px;
+}
+
+.radio-input input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+.radio-input .radio-control {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 2px solid #9B26B0;
+    background: transparent;
+    transition: background 0.25s ease-in-out;
+    cursor: pointer;
+}
+
+.radio-input input[type="radio"]:checked + .radio-control::before {
+    content: "";
+    background: #9B26B0;
+    position: absolute;
+    top: 14%;
+    left: 14%;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+form select {
+    font-family: 'Montserrat', Verdana, sans-serif;
+    font-size: 14px;
+    width: 260px;
+    height: 50px;
+    padding: 8px;
+    border: 3px solid #9B26B0;
+    background-color: #FFF;
+    margin-bottom: 18px;
+}
+
+input[type="submit"] {
+    width: 260px;
+    height: 50px;
+    font-family: 'Montserrat', Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #FFF;
+    background-color: #9B26B0;
+
+}
+
 /* -------------- FOOTER --------------- */
 
+footer {
+    font-family: 'Montserrat', Verdana, sans-serif;
+    font-size: 12px;
+    background-color: #EAEAEA;
+    height: 120px;
+    text-align: center;
+}
 
+footer p {
+    padding: 18px 0;
+}
 
+footer a {
+    text-decoration: none;
+    color: #000;
+    display: block;
+    padding: 8px 0;
+}
 
 
