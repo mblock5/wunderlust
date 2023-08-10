@@ -478,3 +478,273 @@ footer a {
 }
 
 
+/* -------------- MEDIUM SCREEN (620 px) --------------- */
+
+@media (min-width: 620px) {
+
+/* -------------- HEADER --------------- */
+
+
+header {
+    width: auto;
+    height: 220px;
+}
+
+#logo img, a[id="logo"] {
+    width: 180px;
+    height: 82px;
+    margin-top: 18px;
+}
+
+h1 {
+    position: relative;
+    right: 204px;
+    top: 18px;
+    grid-column-start: 2;
+    grid-row-start: 1;
+
+}
+
+header p {
+    position: relative;
+    left: 160px;
+    top: -16px;
+    margin: -4px 0px 0px 24px;
+    width: 340px;
+} 
+
+
+/* --- MENU ---  */
+
+
+
+#menu-toggle label {
+    opacity: 0;
+}
+
+#menu-toggle input {
+    display: none;
+}
+
+
+#menu-toggle ul {
+    opacity: 1;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    left: -310px;
+    top: 48px;
+}
+
+#menu-toggle li {
+    width: auto;
+    margin-right: 16px;
+}
+
+#menu-toggle li a {
+    display: block;
+    background-color: #FFF;
+    padding: 12px;
+    border: none;
+    width: 92px;
+    justify-content: center;
+}
+
+#menu-toggle li a:active {
+    background-color: #F6D64A;
+}
+
+/* --------------- MAIN ---------------- */
+
+h2 {
+    margin-left: 56px;
+}
+
+h3 {
+    margin-left: 56px;
+}
+
+
+
+/* --- INTRO --- */
+
+#intro p {
+    margin: 8px 72px 3px 56px;
+    line-height: 22px;
+}
+
+#intro img {
+    position: relative;
+    left: 50px;
+    margin: 5px;
+    height: 190px;
+}
+
+#intro picture img {
+    width: 493px;
+}
+
+
+/* --- PLAN --- */
+
+#plan div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 8px;
+    padding: 16px 32px;
+}
+
+#plan h4 {
+    font-size: 18px;
+}
+
+#plan div section {
+    width: 232px;
+    height: 198px;
+    margin-left: 24px;
+    margin-bottom: 6px;
+}
+
+#plan div section img {
+    width: 120px;
+}
+
+#plan div section:nth-of-type(2) img {
+    width: 140px;
+    margin-top: 24px;
+}
+
+#plan div section:nth-of-type(1) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+#plan div section:nth-of-type(2) {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+
+#plan div section:nth-of-type(3) {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+#plan div section:nth-of-type(4) {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+
+/* --- TESTIMONIALS --- */
+
+
+#testimonials div {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
+    padding: 0 24px;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+#testimonials div section {
+    margin: auto;
+    padding: 0 32px;
+}
+
+#testimonials div section img {
+    width: 140px;
+}
+
+#testimonials div section:nth-child(1) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+#testimonials div section:nth-child(2) {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+
+#testimonials div section:nth-child(3) {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+}
+
+#testimonials div section:nth-child(4) {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+/* --- ABOUT --- */
+
+
+
+#about div {
+    grid-template-columns: repeat(4, 1fr);
+    width: auto;
+    height: 140px;
+    margin: auto 30px;
+}
+
+/* --- CONTACT --- */
+
+
+
+
+form {
+    width: auto;
+    margin-left: 56px;
+    margin-right: 56px;
+}
+
+
+
+form input {
+    width: 460px;
+}
+
+
+fieldset {
+    grid-template-columns: repeat(3, 1fr);
+    height: 92px;
+    margin-bottom: 16px;
+}
+
+form select {
+    width: 484px;
+}
+
+input[type="submit"] {
+    position: relative;
+    left: 254px;
+    width: 230px;
+    height: 60px;
+}
+
+/* -------------- FOOTER --------------- */
+
+footer {
+    font-family: 'Montserrat', Verdana, sans-serif;
+    font-size: 12px;
+    background-color: #EAEAEA;
+    height: 50px;
+    text-align: center;
+    padding-top: 32px;
+}
+
+footer p {
+    display: inline;
+}
+
+footer a {
+    display: inline;
+    margin-left: 12px;
+}
+
+}
+
+
+
+/* -------------- LARGE SCREEN (1080 px) --------------- */
